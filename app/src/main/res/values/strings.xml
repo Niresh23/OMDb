@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">OMDB</string>
+    <string name="no_internet_connection_intent_uri" translatable="false">"ombd://com.niresh23.omdb.errorFragments/NoInternetConnectionFragment"</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="search_title">Search</string>
+    <string name="title_lbl">Title</string>
+    <string name="quantity_lbl">Quantity</string>
+    <string name="apply_btn_lbl">Apply</string>
+    <string name="comment_hint">Write your comment</string>
+    <string name="imdb_lbl">IMDb</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="comments_count_holder">Comments: %d</string>
+</resources>

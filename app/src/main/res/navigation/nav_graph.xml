@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/SearchFragment">
+
+    <fragment
+        android:id="@+id/SearchFragment"
+        android:name="com.niresh23.omdb.search.SearchFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_SearchFragment_to_DetailsFragment"
+            app:destination="@id/DetailsFrament" />
+    </fragment>
+    <fragment
+        android:id="@+id/DetailsFrament"
+        android:name="com.niresh23.omdb.DetailsFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_DetailsFragment_to_SearchFragment"
+            app:destination="@id/SearchFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/NoInternetConnectionFragment"
+        android:name="com.niresh23.omdb.errorFragments.NoInternetConnectionFragment"
+        android:label="@string/no_internet_connection"
+        tools:layout="@layout/no_internet_conection">
+        <deepLink
+            app:uri="@string/no_internet_connection_intent_uri" />
+        <action
+            android:id="@+id/action_NoInternetConnectionFragment_to_SearchFragment"
+            app:destination="@id/SearchFragment" />
+    </fragment>
+</navigation>
